@@ -1,19 +1,11 @@
 <template>
-    <section v-if="toy" class="">
-      <h3>Toy Details</h3>
-      <p>ID: {{ toy._id }}</p>
-      <p>Name: {{ toy.name }}</p>
-      <p>Price: {{ toy.price }}</p>
-      <ul>
-        <li
-          v-for="(review, idx) in toy.reviews"
-          :key="idx + Math.ceil(Math.random() * 100)"
-        >
-          {{ review }}
-        </li>
-      </ul>
+    <section v-if="game" class="">
+      <h3>Game Details</h3>
+      <p>ID: {{ game._id }}</p>
+      <p>Name: {{ game.name }}</p>
+      <!-- <p>: {{ game. }}</p> -->
+    
     </section>
-    <div v-else class="loading"></div>
   </template>
   
   <script>
